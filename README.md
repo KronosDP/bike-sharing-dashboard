@@ -4,6 +4,8 @@
 
 This is my take for dicoding's data analysis course using python. As you can see in the top right corner of this page, there is a link that will direct you to the deployed streamlit dashboard. There is also a `notebook.ipynb` where you can see my _oret-oretan_.
 
+## To run locally, make sure you have installed
+
 ## Dataset Overview
 
 The dataset consists of a two-year historical log from the Capital Bikeshare system in Washington D.C. (2011-2012). It captures detailed travel information, influenced by environmental and seasonal factors like weather, time of year, and time of day. Bike-sharing systems automate the rental process, offering flexibility and addressing urban issues like traffic and health.
