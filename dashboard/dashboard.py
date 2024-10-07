@@ -4,17 +4,9 @@
 
 import plotly.graph_objects as go
 import plotly.express as px
-import sys
-import subprocess
 import pandas as pd
 import streamlit as st
-
-
-def install_plotly():
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "plotly"])
-
-
-install_plotly()
+import os
 
 # Import Library
 
@@ -25,8 +17,14 @@ install_plotly()
 
 @st.cache_resource
 def load_data():
-    data = pd.read_csv("../data/day.csv")
-    return data
+    # Look for the 'day.csv' file in the directory and subdirectories
+    for root, dirs, files in os.walk("../"):
+        if "day.csv" in files:
+            data_path = os.path.join(root, "day.csv")
+            data = pd.read_csv(data_path)
+            return data
+    raise FileNotFoundError(
+        "day.csv not found in the directory or subdirectories")
 
 
 data = load_data()
