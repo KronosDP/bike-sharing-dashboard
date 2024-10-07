@@ -4,7 +4,43 @@
 
 This is my take for dicoding's data analysis course using python. As you can see in the top right corner of this page, there is a link that will direct you to the deployed streamlit dashboard. There is also a `notebook.ipynb` where you can see my _oret-oretan_.
 
-## To run locally, make sure you have installed
+## Run Deployed Dashboard
+
+Simply click [this link](https://bike-sharing-dashboard-kronosdp.streamlit.app/).
+
+## Run Locally
+
+If you like to run things locally, do this steps:
+
+Clone this repository
+
+```bash
+git clone https://github.com/KronosDP/bike-sharing-dashboard.git
+```
+
+Change directory to `bike-sharing-dashboard`
+
+```bash
+cd bike-sharing-dashboard
+```
+
+Install requirements.txt
+
+```bash
+pip install -r requirements.txt
+```
+
+To run dashboard change directory to 'dashboard'
+
+```bash
+cd dashboard
+```
+
+To run streamlit do
+
+```bash
+streamlit run dashboard.py
+```
 
 ## Dataset Overview
 
@@ -39,3 +75,7 @@ Various plots visualize user trends, such as peak rental times and seasonal vari
 ## Conclusion
 
 The case study emphasizes the role of data analysis in understanding bike-sharing systems. Factors like weather, seasonality, and user type are crucial for optimizing operations and enhancing user satisfaction. The insights gained can inform strategic decisions for improving bike-sharing services and urban transportation solutions.
+
+```
+
+```
