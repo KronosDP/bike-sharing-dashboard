@@ -2,11 +2,21 @@
 # Email         : darrel.danadyaksa19@gmail.com
 # Id Dicoding   : kronosdp
 
-# Import Library
-import streamlit as st
-import pandas as pd
-import plotly.express as px
 import plotly.graph_objects as go
+import plotly.express as px
+import sys
+import subprocess
+import pandas as pd
+import streamlit as st
+
+
+def install_plotly():
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "plotly"])
+
+
+install_plotly()
+
+# Import Library
 
 # ==============================
 # LOAD DATA
